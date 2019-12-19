@@ -12,7 +12,7 @@ const UserForm = ({ values, errors, touched, status }) => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    console.log("status has changed!", status);
+    console.log("status updated", status);
     status && setUsers(animals => [...animals, status]);
   }, [status]);
   return (
